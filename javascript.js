@@ -17,19 +17,19 @@ let playerSelection = getPlayerChoice();
 let computerSelection = getComputerChoice();
 
 if (computerSelection == playerSelection) {
-    document.write(`Computer chose ${computerSelection} too.`);
+    document.write(`It's a tie. Computer chose ${computerSelection} too.`);
 } else if (playerSelection == "rock" && computerSelection == "paper") {
-    document.write("Paper covers rock. You lose!");
+    document.write(`Computer chose ${computerSelection}. You lose!`);
 } else if (playerSelection == "rock" && computerSelection == "scissors") {
-    document.write("Rock smashes Scissors. You win!");
+    document.write(`Computer chose ${computerSelection}. You win!`);
 } else if (playerSelection == "paper" && computerSelection == "rock") {
-    document.write("Paper covers rock. You win!");
+    document.write(`Computer chose ${computerSelection}. You win!`);
 } else if (playerSelection == "paper" && computerSelection == "scissors") {
-    document.write("Scissors cuts paper. You lose!");
+    document.write(`Computer chose ${computerSelection}. You lose!`);
 } else if (playerSelection == "scissors" && computerSelection == "rock") {
-    document.write("Rock smashes scissors. You lose!")
+    document.write(`Computer chose ${computerSelection}. You lose!`)
 } else if (playerSelection == "scissors" && computerSelection == "paper") {
-    document.write("Scissors cuts paper. You win!")
+    document.write(`Computer chose ${computerSelection}. You win!`)
 } else if (playerSelection != "Rock" || "Paper" || "Scissors") {
     document.write("Please choose Rock, Paper, or Scissors")
 }
