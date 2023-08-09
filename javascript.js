@@ -30,6 +30,6 @@ if (computerSelection == playerSelection) {
     document.write("Rock smashes scissors. You lose!")
 } else if (playerSelection == "scissors" && computerSelection == "paper") {
     document.write("Scissors cuts paper. You win!")
-} else if (playerSelection != "Rock" && "Paper" && "Scissors") {
+} else if (playerSelection != "Rock" || "Paper" || "Scissors") {
     document.write("Please choose Rock, Paper, or Scissors")
 }
